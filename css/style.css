@@ -1,0 +1,118 @@
+/*-----------------------------------------------------------------
+    General styles
+-----------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column {
+    float: left;
+}
+.clearfix::before,
+.clearfix::after,
+.container::before,
+.container::after,
+[class*='layout-']::before,
+[class*='layout-']::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.layout-3-cols > .column {
+    width: 33.33%;
+}
+
+.layout-2-cols > .column {
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*-----------------------------------------------------------------
+    Site header
+-----------------------------------------------------------------*/
+
+.site-header {
+    background-color: #000;
+    position: relative;
+    padding: 13.5px 0;
+    text-transform: uppercase;
+}
+
+.site-header .logo {
+    color: white;
+    font-weight: 700;
+    word-spacing: 3px;
+}
+
+.green-text {
+    color: #24B99F;
+}
+
+.site-nav {
+    text-align: right;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu > li {
+    display: inline-block;
+    font-weight: 700;
+    word-spacing: 3px;
+    margin-left: 40px;
+    letter-spacing: 1px;
+}
+
+.menu li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-menu {
+    display: block;
+    position: absolute;
+    background-color: #000;
+    text-transform: none;
+    font-weight: 400;
+    top:58px;
+    transform: translateX(-21px);
+    text-align: left;
+    padding: 11px 0 4px 0;
+}
+
+.sub-menu > li {
+    padding: 6px 25px 6px 15px;
+}
+
+.sub-menu::before {
+    content: '';
+    display: table;
+    position: absolute;
+    top: -22px;
+    left: calc(50% - 16px);
+    border: 10px solid transparent;
+    border-bottom: 12px solid #000;
+}
+
+/*-----------------------------------------------------------------
+    Site header
+-----------------------------------------------------------------*/
+

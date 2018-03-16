@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sit on our Chair</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -10,20 +11,20 @@
         <div class="container">
             <div class="layout-2-cols">
                 <div class="column">
-                    <span>Sit <span class="special-text green-text">on</span> chair</span>
+                    <span class="logo">Sit <span class="special-text green-text">on</span> chair</span>
                 </div>
                 <nav class="column site-nav">
-                    <ul>
+                    <ul class="menu">
                         <li>
-                            O firmie
-                            <!--<ul>-->
-                                <!--<li>Aktualności</li>-->
-                                <!--<li>Nasz team</li>-->
-                                <!--<li>Historia</li>-->
-                            <!--</ul>-->
+                            <a href="#">O firmie</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Aktualności</a></li>
+                                <li><a href="#">Nasz team</a></li>
+                                <li><a href="#">Historia</a></li>
+                            </ul>
                         </li>
-                        <li>Galeria</li>
-                        <li>Kontakt</li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
@@ -31,26 +32,129 @@
     </header>
 
     <main class="site-main">
-        <article class="offert">
-
+        <article class="carousel">
+            <div class="container">
+                <div class="layout-2/3-cols">
+                    <div class="column column-2">
+                        <span class="arrow arrow-left"></span>
+                        <img src="images/black_chair.png" alt="Black chair">
+                    </div>
+                    <div class="column column-3">
+                        <span class="arrow arrow-right"></span>
+                        <h1>
+                            Sit <span class="special-text green-text">on</span> our <span class="special-text green-text">chair</span>
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deleniti dolor doloremque ipsum, iste magnam nostrum odit placeat quis, quo rem, repellat repudiandae sed similique velit! Aut eaque nemo quod reiciendis temporibus!
+                        </p>
+                        <a href="#">Zobacz więcej</a>
+                    </div>
+                </div>
+            </div>
         </article>
+
+        <article class="offert">
+            <div class="container">
+                <div class="layout-3-cols">
+                    <div class="column">
+                        <h3>Chair <span>Clair</span></h3>
+                    </div>
+                    <div class="column">
+                        <h3>Chair <span>Margarita</span></h3>
+                    </div>
+                    <div class="column">
+                        <h3>Find all inputs</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid aspernatur assumenda consectetur deleniti earum enim expedita ipsa nesciunt numquam quod, reiciendis soluta voluptatum! Aliquam architecto beatae culpa doloremque, fuga iste suscipit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi laudantium nam possimus praesentium provident sequi, voluptatum?</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
         <section class="price">
-
+            <div class="container">
+                <h2>Cennik</h2>
+                <div class="layout-3-cols">
+                    <div class="column">
+                        <div class="price-wrapper">
+                            <h3>Basic plan</h3>
+                            <div class="price">
+                                <p>85<sup>99</sup></p>
+                                <p>pln/msc</p>
+                            </div>
+                            <ul>
+                                <li>Zakup towaru + dowóz</li>
+                                <li>Serwis</li>
+                            </ul>
+                        </div>
+                        <a href="#">Dołącz</a>
+                    </div>
+                    <div class="column column-active">
+                        <div class="price-wrapper">
+                            <h3>Standard plan</h3>
+                            <div class="price">
+                                <p>95<sup>99</sup></p>
+                                <p>pln/msc</p>
+                            </div>
+                            <ul>
+                                <li>Zakup towaru + dowóz</li>
+                                <li>Serwis</li>
+                                <li>Gwarancja 5 lat</li>
+                            </ul>
+                        </div>
+                        <a href="#">Dołącz</a>
+                    </div>
+                    <div class="column">
+                        <div class="price-wrapper">
+                            <h3>Basic plan</h3>
+                            <div class="price">
+                                <p>211<sup>00</sup></p>
+                                <p>pln/msc</p>
+                            </div>
+                            <ul>
+                                <li>Zakup towaru + dowóz</li>
+                                <li>Serwis</li>
+                                <li>Gwarancja 6 lat</li>
+                                <li>Porady projektanta</li>
+                            </ul>
+                        </div>
+                        <a href="#">Dołącz</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="contact">
 
+        <section class="contact">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <form class="layout-2/3-cols">
+                    <div class="column">
+                        <input type="text" name="name" placeholder="Imię">
+                        <input type="email" name="mail" placeholder="email">
+                        <textarea name="msg" placeholder="Wiadomość"></textarea>
+                    </div>
+                    <div class="column">
+                        <img src="images/red_chair.png" alt="Red chair">
+                        <div>
+                            <img src="images/form_ok.jpg" alt="Form ok">
+                            <p>Zgadzam się na przetwarzanie danych osobowych</p>
+                        </div>
+                        <button type="submit">Wyślij</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <div class="layout-2-cols">
-                <div class="column copyright">
+            <div class="layout-2/3-cols">
+                <div class="column column-3 copyright">
                     <span>
                         Copyright 2014 | All Rights Reserved. - Sit On Chair
                     </span>
                 </div>
-                <div class="column">
+                <div class="column column-2">
                     <div class="social">
                         <img src="images/flickr.png" alt="flickr logo">
                         <img src="images/vimeo.png" alt="vimeo logo">
