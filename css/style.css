@@ -39,6 +39,14 @@ body {
     width: 50%;
 }
 
+.layout-2_3-cols > .column-2 {
+    width: 40%;
+}
+
+.layout-2_3-cols > .column-3 {
+    width: 60%;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -116,3 +124,63 @@ img {
     Site header
 -----------------------------------------------------------------*/
 
+.carousel {
+    background: #fbfbfb;
+    /*background: -moz-linear-gradient(top, #fbfbfb 0%, #cac9d1 100%);*/
+    /*background: -webkit-linear-gradient(top, #fbfbfb 0%,#cac9d1 100%);*/
+    background: linear-gradient(to bottom, #fbfbfb 0%, #fbfbfb 50%, #cac9d1 100%);
+}
+
+.carousel-img {
+    max-width: none;
+    width: 140%;
+    margin-left: -10%;
+    padding: 80px 0 12px 0;
+}
+
+.carousel-text {
+    padding: 154px 158px 0 67px;
+    text-align: center;
+
+}
+
+.carousel-text h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.carousel-text p{
+    padding: 30px 0 50px 0;
+    line-height: 24px;
+}
+
+.carousel-text a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 25px 10px 50px;
+    background-color: #24B99F;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    font-size: 86px;
+    color: #2CC1A7;
+    top: 50%;
+    margin-top: -47px;
+}
+
+.arrow-left {
+    left: 5px;
+}
+
+.arrow-right {
+    right: 5px;
+}
