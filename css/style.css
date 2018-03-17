@@ -121,13 +121,11 @@ img {
 }
 
 /*-----------------------------------------------------------------
-    Site header
+    Carousel
 -----------------------------------------------------------------*/
 
 .carousel {
     background: #fbfbfb;
-    /*background: -moz-linear-gradient(top, #fbfbfb 0%, #cac9d1 100%);*/
-    /*background: -webkit-linear-gradient(top, #fbfbfb 0%,#cac9d1 100%);*/
     background: linear-gradient(to bottom, #fbfbfb 0%, #fbfbfb 50%, #cac9d1 100%);
 }
 
@@ -165,7 +163,7 @@ img {
     font-size: 30px;
 }
 
-.wrapper {
+.carousel-wrapper {
     position: relative;
 }
 
@@ -183,4 +181,48 @@ img {
 
 .arrow-right {
     right: 5px;
+}
+
+/*-----------------------------------------------------------------
+    Offert
+-----------------------------------------------------------------*/
+.offert .container {
+    margin-top: 30px;
+}
+
+.offert .layout-3-cols {
+    margin: 0 -17px;
+}
+
+.offert .column {
+    padding: 0 17px;
+    position: relative;
+}
+
+.offert .column img {
+    max-width: none;
+    width: 101%;
+}
+
+.offert-item-img div {
+    position: absolute;
+    padding: 0 13px 0 17px;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+}
+
+.offert-item-img h3 {
+    background-color: #5b5a5a;
+    height: 100%;
+    width: 100%;
+}
+
+.offert .column h3 > span {
+    text-transform: uppercase;
+}
+
+
+.offert-inputs {
+
 }
