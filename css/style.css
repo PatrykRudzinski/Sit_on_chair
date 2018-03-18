@@ -186,6 +186,7 @@ img {
 /*-----------------------------------------------------------------
     Offert
 -----------------------------------------------------------------*/
+
 .offert .container {
     margin-top: 30px;
 }
@@ -204,25 +205,55 @@ img {
     width: 101%;
 }
 
-.offert-item-img div {
+.offert .column h3::after {
+    content: '';
+    display: table;
     position: absolute;
-    padding: 0 13px 0 17px;
-    width: 100%;
-    bottom: 20px;
-    left: 0;
-}
-
-.offert-item-img h3 {
-    background-color: #5b5a5a;
-    height: 100%;
-    width: 100%;
+    height: 8px;
+    width: 160px;
+    background-color: #26C5AC;
 }
 
 .offert .column h3 > span {
     text-transform: uppercase;
 }
 
-
-.offert-inputs {
-
+.offert-item-img div {
+    position: absolute;
+    padding: 0 13px 0 19px;
+    width: 100%;
+    bottom: 18px;
+    left: 0;
 }
+
+.offert-item-img h3 {
+    background-color: rgba(255,255,255,0.4);
+    height: 100%;
+    width: 100%;
+    padding: 14px 0 35px 10px;
+    position: relative;
+}
+
+.offert-inputs div {
+    border: 1px solid #d9d9d9;
+}
+
+.offert-inputs h3 {
+    margin: 30px 0 27px 17px;
+    word-spacing: 5px;
+}
+
+.offert-inputs p {
+    line-height: 23px;
+    margin: 20px 0 0 17px;
+    font-size: 16px;
+}
+
+.offert-inputs p:last-child {
+    margin-bottom: 50px;
+}
+
+/*-----------------------------------------------------------------
+    Price
+-----------------------------------------------------------------*/
+
