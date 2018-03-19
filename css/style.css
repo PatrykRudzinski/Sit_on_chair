@@ -124,6 +124,7 @@ h2:after {
     transform: translateX(-21px);
     text-align: left;
     padding: 11px 0 4px 0;
+    z-index: 2;
 }
 
 .sub-menu > li {
@@ -173,6 +174,7 @@ h2:after {
 }
 
 .carousel-text a {
+    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 25px 10px 50px;
@@ -455,6 +457,7 @@ h2:after {
     width: 100%;
     border: 1px solid #A6E2D2;
     font-size: 36px;
+    color: #919191;
     font-weight: 300;
     letter-spacing: 2px;
     padding: 15px;
@@ -524,7 +527,8 @@ h2:after {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-size: 38px;
-    font-weight: 600;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 /*-----------------------------------------------------------------
@@ -546,7 +550,6 @@ h2:after {
 .site-footer .social img {
     display: inline-block;
     float: left;
-
 }
 
 .site-footer .column-3 > span{
@@ -562,4 +565,54 @@ h2:after {
     text-transform: uppercase;
     float: right;
     line-height: 35px;
+}
+
+/*-----------------------------------------------------------------
+    Interaction
+-----------------------------------------------------------------*/
+
+.site-header a:focus {
+    color: #24B99F;
+    text-decoration: underline;
+    outline: none;
+}
+
+.menu a:hover {
+    color: #24B99F;
+}
+
+.arrow:hover,
+.social img:hover{
+    transform: scale(1.1);
+}
+
+.carousel-text > a:hover {
+    margin-left: -1px;
+    margin-top: -1px;
+    box-shadow: 1px 1px 3px 1px #bbb;
+}
+
+.price-wrapper > a:hover,
+.contact .column-2 button:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 1px 1px #bbb;
+}
+
+.price-wrapper-active > a:hover {
+    box-shadow: 1px 1px 1px 1px #25AB90;
+}
+
+.arrow,
+.carousel-text > a,
+.menu a,
+.price-wrapper > a,
+.social img,
+.contact .column-2 button{
+    transition: 0.2s;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+    outline: none;
+    box-shadow: 0 0 3px 1px #A6E2D2 inset;
 }
