@@ -52,6 +52,22 @@ img {
     display: block;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 16px;
+}
+
+h2:after {
+    content: '';
+    display: table;
+    position: absolute;
+    background-color: #24BA9C;
+    height: 8px;
+    width: 362px;
+    margin-top: 8px;
+}
 /*-----------------------------------------------------------------
     Site header
 -----------------------------------------------------------------*/
@@ -186,9 +202,13 @@ img {
 /*-----------------------------------------------------------------
     Offert
 -----------------------------------------------------------------*/
+.offert {
+    background-color: #FAFAFA;
+}
 
 .offert .container {
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 80px;
 }
 
 .offert .layout-3-cols {
@@ -255,5 +275,160 @@ img {
 
 /*-----------------------------------------------------------------
     Price
+-----------------------------------------------------------------*/
+
+.price {
+    background-color: #EEEEEE;
+    color: #C6C6C6;
+}
+
+.price .container {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.price h2 {
+    padding-bottom: 100px;
+    color: #585858;
+}
+
+.price .layout-3-cols {
+    margin: 0 -15px;
+}
+
+.price .column {
+    padding: 0 15px;
+}
+
+.price-wrapper {
+    border: 2px solid #D4D4D4;
+    background-color: #F8F8F8;
+    position: relative;
+    text-align: center;
+}
+
+.price-wrapper > div {
+    min-height: 500px;
+}
+
+.price-wrapper span {
+    position: absolute;
+    display: table;
+    border-radius: 50%;
+}
+
+.price-wrapper span:nth-of-type(1) {
+    height: 60px;
+    width: 60px;
+    background-color: #fefefe;
+    border: 3px solid #D4D4D4;
+    top: -45px;
+    left: calc(50% - 30px);
+}
+
+.price-wrapper span:nth-of-type(2) {
+    height: 30px;
+    width: 30px;
+    background-color: #C1C1C1;
+    top: -30px;
+    left: calc(50% - 15px);
+}
+
+.price-wrapper h3{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 31px;
+    color: #25C69E;
+}
+
+.price-price {
+    margin: 30px auto 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: #FEFEFE;
+    border: 3px solid #D4D4D4;
+    border-radius: 50%;
+}
+
+.price-price p:first-child {
+    font-weight: 700;
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+.price-price p:first-child sub {
+    font-size: 50px;
+    vertical-align: top;
+}
+
+.price-price p:first-child sup {
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.price-price p:last-child {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.price-wrapper ul {
+    margin-top: 35px;
+    background-color: #F0F0F0;
+    color: #A1A1A1;
+    list-style: none;
+    font-size: 27px;
+}
+
+.price-wrapper li {
+    padding: 10px 0;
+}
+
+.price-wrapper li:nth-child(odd) {
+    background-color: #E3E3E3;
+}
+
+.price-wrapper a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #27C6AB;
+    color: #fbfbfb;
+    padding: 9px 36px;
+    border-radius: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+}
+
+.price-wrapper-active {
+    background-color: #27C6AB;
+    border-color: #27C6AB;
+}
+
+.price-wrapper-active span:nth-of-type(1) {
+    background-color: #27C6AB;
+    border-color: #27C6AB;
+}
+
+.price-wrapper-active span:nth-child(2) {
+    background-color: #F8F8F8;
+}
+
+.price-wrapper-active .price-price {
+    color: #27C6AB;
+    border-color: #27C6AB;
+}
+
+.price-wrapper-active li:nth-child(odd) {
+    background-color: #fefefe;
+}
+
+.price-wrapper-active a {
+    background-color: #fefefe;
+    color: #27C6AB;
+}
+
+/*-----------------------------------------------------------------
+    Contact
 -----------------------------------------------------------------*/
 
