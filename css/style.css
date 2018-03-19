@@ -68,6 +68,14 @@ h2:after {
     width: 362px;
     margin-top: 8px;
 }
+
+.green-text {
+    color: #24B99F;
+}
+
+.special-text {
+    font-weight: 700;
+}
 /*-----------------------------------------------------------------
     Site header
 -----------------------------------------------------------------*/
@@ -83,10 +91,6 @@ h2:after {
     color: white;
     font-weight: 700;
     word-spacing: 3px;
-}
-
-.green-text {
-    color: #24B99F;
 }
 
 .site-nav {
@@ -155,7 +159,6 @@ h2:after {
 .carousel-text {
     padding: 154px 158px 0 67px;
     text-align: center;
-
 }
 
 .carousel-text h1 {
@@ -189,6 +192,7 @@ h2:after {
     color: #2CC1A7;
     top: 50%;
     margin-top: -47px;
+    cursor: pointer;
 }
 
 .arrow-left {
@@ -432,3 +436,130 @@ h2:after {
     Contact
 -----------------------------------------------------------------*/
 
+.contact{
+    background-color: #FDFDFD;
+}
+
+.contact .container {
+    padding-top: 35px;
+}
+
+.contact h2 {
+    padding-bottom: 67px;
+}
+
+.contact input[type=text],
+.contact input[type=email],
+.contact textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #A6E2D2;
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact textarea {
+    height: 220px;
+    resize: none;
+}
+
+::-webkit-input-placeholder {
+    color: #CECECE;
+}
+::-moz-placeholder {
+    color: #CECECE;
+}
+:-ms-input-placeholder {
+    color: #CECECE;
+}
+
+.contact .column-2 {
+    padding-left: 75px;
+}
+
+.contact .column-2 img {
+    width: 75%;
+}
+
+.contact input[type=checkbox]{
+    display: none;
+    user-select: none;
+}
+
+.contact input[type=checkbox] + label {
+    border: 1px solid #A6E2D2;
+    height: 55px;
+    width: 55px;
+    display:inline-block;
+    float: left;
+    margin-right: 15px;
+}
+
+.contact input[type=checkbox]:checked + label {
+    background-image: url("../images/form_ok.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact .column-2 p {
+    font-size: 23px;
+    color: #B0B0B0;
+    display: inline;
+}
+
+.contact button {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #24B99F;
+    color: #FEF5FE;
+    border: none;
+    border-radius: 10px;
+    padding: 18px 0;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+/*-----------------------------------------------------------------
+    Footer
+-----------------------------------------------------------------*/
+
+.site-footer {
+    color: #999999;
+}
+
+.site-footer .container {
+    padding: 75px 0;
+}
+
+.site-footer .column-2 {
+    padding-left: 75px;
+}
+
+.site-footer .social img {
+    display: inline-block;
+    float: left;
+
+}
+
+.site-footer .column-3 > span{
+    font-size: 20px;
+    word-spacing: 1px;
+    vertical-align: bottom;
+    line-height: 35px;
+}
+
+.site-footer .column-2 > span{
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    float: right;
+    line-height: 35px;
+}
