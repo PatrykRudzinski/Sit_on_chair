@@ -327,7 +327,7 @@ h2:after {
     height: 60px;
     width: 60px;
     background-color: #fefefe;
-    border: 3px solid #D4D4D4;
+    border: 2px solid #D4D4D4;
     top: -45px;
     left: calc(50% - 30px);
 }
@@ -409,6 +409,10 @@ h2:after {
 .price-wrapper-active {
     background-color: #27C6AB;
     border-color: #27C6AB;
+}
+
+.price-wrapper-active h3 {
+    color: #F8F8F8;
 }
 
 .price-wrapper-active span:nth-of-type(1) {
