@@ -83,12 +83,12 @@ h2:after {
 .site-header {
     background-color: #000;
     position: relative;
-    padding: 13.5px 0;
     text-transform: uppercase;
 }
 
 .site-header .logo {
     color: white;
+    line-height: 45px;
     font-weight: 700;
     word-spacing: 3px;
 }
@@ -110,6 +110,7 @@ h2:after {
 }
 
 .menu li > a {
+    line-height: 45px;
     color: #fff;
     text-decoration: none;
 }
@@ -120,15 +121,18 @@ h2:after {
     background-color: #000;
     text-transform: none;
     font-weight: 400;
-    top:58px;
-    transform: translateX(-21px);
     text-align: left;
+    top: 56px;
+    transform: translateX(-15%);
     padding: 11px 0 4px 0;
+    opacity: 0;
+    transition: 0.3s opacity;
     z-index: 2;
 }
 
-.sub-menu > li {
+.sub-menu > li a {
     padding: 6px 25px 6px 15px;
+    line-height: 31px;
 }
 
 .sub-menu::before {
@@ -139,6 +143,15 @@ h2:after {
     left: calc(50% - 16px);
     border: 10px solid transparent;
     border-bottom: 12px solid #000;
+}
+
+.sub-menu::after {
+    content: '';
+    display: table;
+    position: absolute;
+    top: -15px;
+    height: 15px;
+    width: 100%;
 }
 
 /*-----------------------------------------------------------------
@@ -189,6 +202,8 @@ h2:after {
 }
 
 .arrow {
+    background-color: transparent;
+    border: none;
     position: absolute;
     font-size: 86px;
     color: #2CC1A7;
@@ -224,6 +239,8 @@ h2:after {
 .offert .column {
     padding: 0 17px;
     position: relative;
+    transition: 0.5s transform;
+    overflow: hidden;
 }
 
 .offert .column img {
@@ -250,6 +267,7 @@ h2:after {
     width: 100%;
     bottom: 18px;
     left: 0;
+    transition: 0.5s;
 }
 
 .offert-item-img h3 {
@@ -395,15 +413,16 @@ h2:after {
     background-color: #E3E3E3;
 }
 
-.price-wrapper a {
+.price-wrapper button {
     text-transform: uppercase;
-    text-decoration: none;
     background-color: #27C6AB;
     color: #fbfbfb;
-    padding: 9px 36px;
+    font-size: 18px;
+    padding: 10px 36px;
     border-radius: 10px;
     margin: 5px 0 20px 0;
     display: inline-block;
+    border: none;
 }
 
 .price-wrapper-active {
@@ -433,7 +452,7 @@ h2:after {
     background-color: #fefefe;
 }
 
-.price-wrapper-active a {
+.price-wrapper-active button {
     background-color: #fefefe;
     color: #27C6AB;
 }
@@ -581,13 +600,26 @@ h2:after {
     outline: none;
 }
 
+.first-li:hover .sub-menu {
+    opacity: 1;
+}
+
 .menu a:hover {
     color: #24B99F;
 }
 
-.arrow:hover,
-.social img:hover{
+.social img:hover,
+.arrow:hover {
     transform: scale(1.1);
+}
+
+.offert-item-img:hover,
+.offert-inputs:hover{
+    transform: scale(1.075);
+}
+
+.offert-item-img:hover > div {
+    transform: translateY(150%);
 }
 
 .carousel-text > a:hover {
@@ -596,20 +628,20 @@ h2:after {
     box-shadow: 1px 1px 3px 1px #bbb;
 }
 
-.price-wrapper > a:hover,
+.price-wrapper > button:hover,
 .contact .column-2 button:hover{
     transform: scale(1.02);
     box-shadow: 1px 1px 1px 1px #bbb;
 }
 
-.price-wrapper-active > a:hover {
+.price-wrapper-active > button:hover {
     box-shadow: 1px 1px 1px 1px #25AB90;
 }
 
 .arrow,
 .carousel-text > a,
 .menu a,
-.price-wrapper > a,
+.price-wrapper > button,
 .social img,
 .contact .column-2 button{
     transition: 0.2s;
