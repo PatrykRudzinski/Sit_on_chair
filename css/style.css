@@ -39,11 +39,11 @@ body {
     width: 50%;
 }
 
-.layout-2_3-cols > .column-2 {
+.layout-2_3-cols  .column-2 {
     width: 40%;
 }
 
-.layout-2_3-cols > .column-3 {
+.layout-2_3-cols  .column-3 {
     width: 60%;
 }
 
@@ -163,11 +163,34 @@ h2:after {
     background: linear-gradient(to bottom, #fbfbfb 0%, #fbfbfb 50%, #cac9d1 100%);
 }
 
+.carousel > .container {
+    min-height: 575px;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.slide-active {
+    display: block;
+}
+
 .carousel-img {
-    max-width: none;
-    width: 140%;
     margin-left: -10%;
     padding: 80px 0 12px 0;
+    max-width: none;
+    width: 140%;
+}
+
+.carousel-img-red {
+    width: 120%;
+    padding: 80px 0 12px 80px;
+}
+
+.carousel-img-vis {
+    display: block;
 }
 
 .carousel-text {
@@ -186,13 +209,14 @@ h2:after {
     line-height: 24px;
 }
 
-.carousel-text a {
+.carousel-text button {
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 25px 10px 50px;
     background-color: #24B99F;
     color: #fff;
+    border: none;
     border-radius: 10px;
     font-size: 30px;
 }
@@ -210,6 +234,7 @@ h2:after {
     top: 50%;
     margin-top: -47px;
     cursor: pointer;
+    z-index: 10;
 }
 
 .arrow-left {
@@ -622,7 +647,7 @@ h2:after {
     transform: translateY(150%);
 }
 
-.carousel-text > a:hover {
+.carousel-text > button:hover {
     margin-left: -1px;
     margin-top: -1px;
     box-shadow: 1px 1px 3px 1px #bbb;
