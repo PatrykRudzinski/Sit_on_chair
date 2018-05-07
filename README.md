@@ -1,4 +1,4 @@
-# Sit-on-chair
+# Sit on chair
 
 [Live](https://patrykrudzinski.github.io/Sit-on-chair/)
 
